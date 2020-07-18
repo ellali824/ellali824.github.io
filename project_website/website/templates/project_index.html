@@ -8,13 +8,14 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Yantramanav" rel="stylesheet">
     <!-- CSS stylesheet -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
   </head>
   <body>
+    <div class="wrapper">
          <!-- NAVBAR -->
          <nav class="navbar navbar-default">
           <div class="container-fluid">
@@ -42,23 +43,25 @@
         </div>
         
 
-    <div class="wrapper">
+   
       <!-- CONTENT -->
       <div class="container">
           <div class="flex-container">
 
             {% for project in projects %}
             <div class="flex-item">
-              <a href="projects/gapgap">
+              <a href="{{ project.link }}">
                 
                 <div class="flex-img">
-                  <img class='project-img' src="{{ project.image.url }}" alt="GapGap logo"></img>
+                  <img class='project-img' src="{{ project.image.url }}" alt=""></img>
                 </div>
+
                 <div class="flex-title">
-                  <span>{{ project.title }}</span>
+                  <span class = "project-title"> {{ project.title }}</span>
                   <br>
+                  <span class= "project-meta"> {{ project.description }}</span>
                   <br>
-                  <span>Technologies Used: {{ project.technology }}</span>
+                  <span class= "project-meta"> Technologies used: {{ project.technology }}</span>
                 </div>
               </a>
             </div>
@@ -68,15 +71,16 @@
       </div>
 
       <!-- FOOTER -->
-      <div>
+    
         <div class="container-footer">
           <div class="footer">
             <hr class="footer-hr">
-            Made with ☕ at my house 🏠 (where else lol) in 2020 by Ella Li 
+            Made with ☕ and 🥑 by Ella Li 
+
           </div>
         </div>
-      </div>
+      
 
-    </div>
+    </div> <!-- end of wrapper class-->
   </body>
 </html>

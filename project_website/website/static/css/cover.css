@@ -1,0 +1,75 @@
+.my-name{
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    height: 25%;
+    font-size: calc(50px + (150 - 50) * ((100vw - 300px) / (1600 - 300))) !important;
+    line-height: 75px;
+    font-family: 'Roboto', monospace;
+    color: #000053;
+  }
+
+  .inner-name{
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    /*right: 0px;*/
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: auto; 
+    margin-left: 10%;
+    margin-right: auto;
+  }
+
+  .description{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*right: 0px;*/
+    bottom: 0px;
+    margin-top: 150px;
+    margin-left: 10.5%;
+    font-size: calc(16px + (50 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+    font-family: 'Roboto', monospace;
+    color: #000053;
+
+  }
+
+  @media only screen and (max-width: 1300px) {
+
+    .description{
+      margin-top: 90px;
+    }
+   
+  }
+
+  #vanta-container{
+    height: 100vh; 
+    margin: -8px; 
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+ }
+ 
+
+ .navbar {
+  margin-bottom: 0;
+  border: 0;
+}
+#next {
+  padding-top: 40px;
+  width: 30px;
+  margin-left: 90%;
+  margin-right: 10%;
+}
+

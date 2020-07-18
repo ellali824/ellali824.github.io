@@ -1,12 +1,61 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title></title>
+    <title>Hello!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+    <script src="{% static 'js/vanta.waves.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/cover.css' %}">
+    <script src="{% static 'js/typing.js' %}"></script>
+
+
 </head>
 <body>
-<h1>Cover page</h1>
+ 
+    <div id = "vanta-container">
+
+            <div class="navbar home">
+              <div class="nav container" role="navigation">
+                    <a href="{% url 'website:about' %}" class="nav-button home nav-arrow">
+                      <img id="next" src="{% static "img/arrow.png" %}" alt="Arrow by Rainbow Designs from the Noun Project">
+                    </a>
+              </div>
+            </div>
+
+        <div class = "my-name">
+            <span class = "inner-name">Ella Li </span> 
+            <br>
+            <div class = "description"> I love 
+                <span
+                   class="txt-rotate"
+                   data-period="1000"
+                   data-rotate='[ "creating content", "developing software", "studying", "travelling to unconventional places", "my maltipoo!" ]'>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        VANTA.WAVES({
+          el: "#vanta-container",
+          mouseControls: true,
+          touchControls: true,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xca79a9,
+          shininess: 4.00,
+          waveHeight: 13.50,
+          waveSpeed: 0.85
+        })
+        </script>
+   
+   
+
 </body>
 </html>

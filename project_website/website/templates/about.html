@@ -8,15 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   {% block styles %}{% endblock %}
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="{% static 'css/style1.css' %}">  
 </head>
 
 <body>
 <!-- Navbar -->
+<div class="wrapper">
+    
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div id="navbar">
@@ -44,6 +46,7 @@
 
 {% block body_block %}
 <!-- Home -->
+
 <div class="container-fluid">    
 
   <div class="row">
@@ -65,24 +68,23 @@
             I’m interested in machine learning and I love creating coding projects. In my spare time, I’m either making YouTube videos, drawing on my iPad, or watching kdramas. 
             <br>
             <br>
-            Feel free to check out my past projects and both past and current work experiences! 
+            Feel free to check out my completed projects and both past and current work experiences! 
             <br>
             <br>
             <br>
-            <br>
-            <span class='strong'>Main Skills (my 🍞 and my 🧈)</span>
+            <span class='strong'>Main skills (my 🍞 and my 🧈)</span>
             <div class = "in-between"></div>
             Python <span class='separator'></span>
             JavaScript <span class='separator'></span>
             jQuery <span class='separator'></span>
-            Django <span class='separator'></span>
             HTML & CSS
             <br>
             <br>
             <br>
-            <span class='strong'>Additional skills (things that I maybe looked at once)</span>
+            <span class='strong'>Additional skills</span>
             <div class = "in-between"></div>
-            Google Cloud Engine<span class='separator'></span>
+            Django <span class='separator'></span>
+            Google App Engine<span class='separator'></span>
             <br>
             <br>
             <br>
@@ -90,7 +92,7 @@
           </div>
 
             <div id = "social">
-            <a target="_blank" href="cv.html">Resume</a>
+            <a target="_blank" href="#">Resume</a>
             <span class='separator'>|</span>
             <a target="_blank" href="https://www.linkedin.com/in/ella-li-2506901a7/" class="copy_body_link">LinkedIn</a>
              <span class='separator'>|</span>
@@ -106,20 +108,24 @@
     <!--</div> -->
 
     <!-- <div class="col-sm-5"> -->
-      <div id="right"> <img src="{% static "img/website-pic.jpeg" %}" class="img-responsive" style="width:100%" alt="Image"></div>
+      <div id="right"> <img src="{% static "img/website-pic.jpeg" %}" class="img-responsive" style="width:100%;" alt="Image"></div>
   <!-- </div> -->
 
   </div> <!--end of class row-->
-</div> 
+</div> <!-- end of container-fluid-->
 {% endblock %}
 
 
 <!-- Footer -->
-  <div id=footer>
-    <footer class="container-fluid text-center">
-      <div class="text">&#169; Made with ☕ at my house 🏠 (where else lol) in 2020 by Ella Li </div>
-    </footer>
+  <!-- FOOTER -->
+    <div class="container-footer">
+      <div class="footer">
+        <hr class="footer-hr">
+        Made with ☕ and 🥑 by Ella Li
+      </div>
+    </div>
   </div>
+</div> <!-- end of wrapper-->
 
 </body>
 </html>

@@ -8,13 +8,14 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto|Yantramanav" rel="stylesheet">
     <!-- CSS stylesheet -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
   </head>
   <body>
+    <div class="wrapper">
          <!-- NAVBAR -->
          <nav class="navbar navbar-default">
           <div class="container-fluid">
@@ -41,39 +42,41 @@
         <div class = "pink-separator"> 
         </div>
         
-
-    <div class="wrapper">
+       
+   
       <!-- CONTENT -->
       <div class="container">
           <div class="flex-container">
 
+            
             {% for work in works %}
             <div class="flex-item">
-              <a href="projects/gapgap">
+              <a href="{{ work.link }}">
                 
                 <div class="flex-img">
-                  <img class='project-img' src="{{ work.image.url }}" alt="GapGap logo"></img>
+                  <img class='project-img' src="{{ work.image.url }}" alt=""></img>
                 </div>
+
                 <div class="flex-title">
-                  <span>{{ work.title }}</span>
+                  <span class = "project-title"> {{ work.title }}</span>
                   <br>
+                  <span class= "project-meta"> {{ work.description }}</span>
                   <br>
-                  <span>Technologies Used: {{ work.technology }}</span>
+                  <span class= "project-meta"> {{ work.description2 }}</span>
                 </div>
               </a>
             </div>
     {% endfor %}
 
+
           </div>
       </div>
 
       <!-- FOOTER -->
-      <div>
-        <div class="container about">
-          <div class="footer">
-            <hr class="footer-hr">
-              &copy; 2019 <a href="mailto:ana.veljkovic.harris@gmail.com?subject=Hello" class="footer-name">Ana V Harris</a>
-          </div>
+      <div class="container-footer">
+        <div class="footer">
+          <hr class="footer-hr">
+          Made with ☕ and 🥑 by Ella Li 
         </div>
       </div>
 

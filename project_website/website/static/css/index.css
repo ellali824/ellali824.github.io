@@ -53,7 +53,8 @@ a:hover {
   overflow: hidden;
   display: block;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 0px;
+  background-color: #fff0f7;
 }
 
 .mobile {
@@ -64,8 +65,9 @@ a:hover {
 .navbar {
   margin-bottom: 0;
   border: 0;
-  background-color: white !important;
+  background-color: #fff0f7 !important;
 }
+
 #navbar .navbar-nav li a, #navbar .navbar-header a{
   font-size: 18px;
   font-family: 'Roboto', monospace;
@@ -76,21 +78,21 @@ a:hover {
 .pink-separator{
   height: 3px;
   margin-top: 5px;
-  background-color: pink;
+  background-color: #bddcff;
 }
 
 #navbar .navbar-nav li a:hover, #navbar .navbar-header a:hover {
-  color: #0000ff;
+  color: #A4CEFF;
 }
 .css-typing a:hover{
-  color: #0000ff;
+  color: #A4CEFF;
 }
 
 .container-fluid a{
   text-decoration: none;  
 }
 .container-fluid{
-  background-color: white;
+  background-color: #fff0f7 ;
   padding-top: 10px; 
   margin-left: auto;
   margin-right: auto;
@@ -113,11 +115,11 @@ a:hover {
   position: absolute;
   bottom: 0;
   width: 80%;
-  margin: auto;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   font-weight: 100;
-  font-size: 0.75rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto",monospace;
+  font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
   text-align: center;
   margin-left: 10%;
   margin-right: 10%
@@ -131,7 +133,7 @@ a:hover {
   margin-top: 35px;
   margin-bottom: 15px;
   border-width: 0;
-  border-top: 3px solid #ffdbd1;
+  border-top: 3px solid #bddcff;
   width: 100%;
   text-align: center;
 }
@@ -228,7 +230,7 @@ a:hover {
 
 .flex-item {
   margin: 20px;
-  background-color: #ffdbd1;
+  background-color: #bddcff;
   position: relative;
   width: 45%;
 }
@@ -242,32 +244,23 @@ a:hover {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  margin: auto;
-  height: 100px;
-  font-size: 35px;
+  margin-top: 18%;
+  margin-bottom: 31%;
+  height: 50%;
+  font-size: calc(18px + (22 - 18) * ((100vw - 300px) / (1600 - 300))) !important;
+  line-height: 45px;
   font-family: 'Roboto', monospace;
-  line-height: 28px;
   opacity: 0;
-}
-.flex-technologies{
-  position: absolute;
-  overflow: hidden;
-  white-space: nowrap;
-  text-align: left;
-  vertical-align: 20%;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  margin: auto;
-  height: 40px;
-  font-size: 35px;
-  font-family: 'Playfair Display', sans-serif;
-  line-height: 28px;
-  opacity: 0;
+  color: black;
 }
 
+.project-title{
+  font-size: calc(22px + (30 - 22) * ((100vw - 300px) / (1600 - 300))) !important;
 
+}
+.project-meta{
+  color: #515151;
+}
 .flex-img {
   z-index: 100;
   height: 100%;
@@ -408,7 +401,11 @@ a:hover {
   .flex-item {
     width: 90%;
   }
-
+  /*
+  .footer {
+    position: relative;
+}
+*/
 }
 
 @media only screen and (min-width: 640px) and (max-width: 940px) {
@@ -422,10 +419,11 @@ a:hover {
      margin-right: auto;
      width: 85%;
    }
-
+/*
   .footer {
     width: 85%;
   }
+  */
 
   .flex-item {
     width: 100%;
@@ -489,11 +487,15 @@ a:hover {
     margin-right: auto;
     width: 90%;
   }
+  .footer {
+    position: absolute;
+}
 
+/*
   .footer {
     width: 90%;
   }
-
+*/
   .flex-item {
     width: 100%;
   }
