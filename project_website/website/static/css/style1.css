@@ -20,9 +20,7 @@ html, body{
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  height: 100%;
-  
-  
+  height: 100%;  
 }
 @media (min-width:320px){
   .container-fluid{
@@ -92,12 +90,15 @@ sub {
     margin-right: 10%
   }
 }
+
 #left #social a{
   font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
   font-weight: bold;
-  color: black
+  color: black;
 }
+
+
 #left ul a:hover, .css-typing a, #left #social a:hover {
   color: #A4CEFF;
 }
