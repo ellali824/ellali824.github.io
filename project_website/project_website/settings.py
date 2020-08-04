@@ -25,7 +25,7 @@ SECRET_KEY = 'p!#jg@(&_ns85tq5ug25%utjobe4v8la!i*t--$a6m03=is95e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ellali.pythonanywhere.com', 'ella-li.com']
+ALLOWED_HOSTS = ['ellali.pythonanywhere.com','ella-li.com','127.0.0.1']
 
 
 # Application definition

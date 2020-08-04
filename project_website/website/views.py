@@ -24,4 +24,6 @@ def work(request):
         'works': works, 'url': url
     }
     return render(request, 'work.html', context) # Any entries in the context dictionary are available in the template, as long as the context argument is passed to render(). You’ll need to create a context dictionary and pass it to render in each view function you create.
-    
+
+def resume(request):
+    return render(request, 'resume.html',{})
