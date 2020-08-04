@@ -247,7 +247,7 @@ a:hover {
   margin-top: 18%;
   margin-bottom: 31%;
   height: 50%;
-  font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
   line-height: 45px;
   font-family: 'Roboto', monospace;
   opacity: 0;
@@ -255,7 +255,7 @@ a:hover {
 }
 
 .project-title{
-  font-size: calc(14px + (30 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
 
 }
 .project-meta{
