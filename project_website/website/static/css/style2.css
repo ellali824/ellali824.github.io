@@ -141,18 +141,31 @@ a:hover {
   background-color: #bddcff;
   position: relative;
   width: 45%;
-  overflow: scroll !important;
 }
 
 .flex-title{
   position: absolute;
-  overflow: scroll !important;
+  overflow: scroll;
+  white-space: nowrap;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  height: 50%;
+  margin-top: 18%;
+  margin-bottom: 30%;
+  /*
+  position: absolute;
   white-space: nowrap;
   text-align: center;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  margin-left: 1px;
+  */
   font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(25px + (45 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Roboto', monospace;
@@ -176,6 +189,7 @@ a:hover {
   }
   .flex-title{
     font-size: 22px;
+    line-height: 45px;
   }
 
 }
