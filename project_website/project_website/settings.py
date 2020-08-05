@@ -19,9 +19,11 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
+# SECURITY WARNING: keep the secret key used in production secret!
+
+SECRET_KEY = 'p!#jg@(&_ns85tq5ug25%utjobe4v8la!i*t--$a6m03=is95e'
 
 ALLOWED_HOSTS = ['ellali.pythonanywhere.com','ella-li.com','127.0.0.1']
-
 
 # Application definition
 
@@ -95,7 +97,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
@@ -118,3 +119,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
