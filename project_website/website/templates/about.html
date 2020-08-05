@@ -2,12 +2,11 @@
 {% load static %}
 <html lang="en">
 <head>
-  <title>{% block title %} Ella Li | About {% endblock %}</title>
+  <title>Ella Li | About </title>
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  {% block styles %}{% endblock %}
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -44,24 +43,18 @@
 <div class = "pink-separator"> 
 </div>
 
-{% block body_block %}
 <!-- Home -->
 
 <div class="container-fluid">    
 
   <div class="row">
 
-  <!-- <div class="col-sm-7"> -->
     <div id="left">
       <h1 class = "my-name">Hi, I'm Ella!</h1>
       <div class="css-typing">
         <p>I am currently studying computer science at the</p>
         <p>University of Toronto in Ontario, Canada 🇨🇦</p>
       </div>
-   <!-- 
-      <div id="social">
-      <a href="https://www.linkedin.com/in/pmajoni">LinkedIn</a>| <a href="https://github.com/pmajon">GitHub</a>| <a href="https://www.facebook.com/pelagiamaria.majoni.3"> Facebook</a>| <a href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:f5072705-6a2c-4039-940d-23f4736105ed"> Resume</a>| <a href="https://docs.google.com/document/d/1-4_RZvkneNjTGh06IO4oxVDhXJ10xXo9QaPnldKfiYA/edit?usp=sharing"> Failure Resume</a>
-      </div>-->
     
           <div class="txt">
             <div class = "more-about-me">
@@ -105,20 +98,14 @@
           
           </div>
     </div> <!--end of class left-->
-
-    <!--</div> -->
-
-    <!-- <div class="col-sm-5"> -->
+  
       <div id="right"> <img src="{% static "img/website-pic.jpeg" %}" class="img-responsive" style="width:100%;" alt="Image"></div>
-  <!-- </div> -->
 
   </div> <!--end of class row-->
 </div> <!-- end of container-fluid-->
-{% endblock %}
 
 
 <!-- Footer -->
-  <!-- FOOTER -->
     <div class="container-footer">
       <div class="footer">
         <hr class="footer-hr">
@@ -126,7 +113,8 @@
       </div>
     </div>
   </div>
-</div> <!-- end of wrapper-->
+</div> 
+<!-- end of wrapper-->
 
 </body>
 </html>

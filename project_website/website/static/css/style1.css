@@ -28,20 +28,8 @@ html, body{
   padding-right: 40px !important;
   }
 }
-sub { 
-    vertical-align: sub; 
-    font-size: small; 
-} 
-.section-header {
-    font-family: "Roboto",monospace;
-    font-size: 2.65em;
-    font-weight: bold;
-    text-align: left;
-    position: relative;
-    color: red;
-    font-weight: bold;
-}
-/**Global**/
+/**End Global**/
+
 
 /**Start Navbar**/
 .navbar {
@@ -69,6 +57,7 @@ sub {
   color: #A4CEFF;
 }
 /**End Navbar**/
+
 
 /**Start Home**/
 #left{
@@ -123,9 +112,7 @@ sub {
     width: 100%;
   }
 }
-#left #social{
-    /*margin-top: 55px;*/
-}
+
 #left ul a:hover {
   color: #A4CEFF;
 }
@@ -170,8 +157,6 @@ sub {
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
   
   overflow: hidden;
-  
-  
 
 }
 @media (min-width: 1550px) { /* big landscape tablets, laptops, and desktops */ /*1025*/
@@ -200,20 +185,7 @@ sub {
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
   }
-  /*
-  .css-typing p:nth-child(3) {
-    width: 1000px; /* manually set width 
-    padding-top: 2px;
-    height: 1.8em;
-    opacity: 0;
-    -webkit-animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
-    animation: type3 2s steps(20, end), blink .5s step-end infinite alternate;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-  }
-  */
+  
   @keyframes type {
     0% {
       width: 0;
@@ -255,141 +227,8 @@ sub {
     }
   }
 }
-/*
-  @keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @-webkit-keyframes type3 {
-    0% {
-      width: 0;
-    }
-    1% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
-  @-webkit-keyframes blink {
-    50% {
-      border-color: tranparent;
-    }
-  }
-}
-/**End Type Writer Effect**/
-/**End Home**/
+/**End TypeWriter Effect **/
 
-/**Start Experiences
-#experiences {
-    height: auto;
-    margin-top: 40px;
-    min-height: 400px;
-}
-@media (min-width:641px)  {
-  .tab {  
-    margin-left: 190px;
-  }
-  .tab, .tb {
-    text-align: right; 
-  }
-  .tb {  
-    margin-left: 323px;
-  }
-}
-#experiences .exp{
-    text-align: left;
-    font-size: 1.15em;
-    line-height: 1.3em;
-    font-family: "Roboto",monospace;
-    margin-top: 40px;  
-}
-#experiences .exps{
-  margin-left:40px;
-  margin-right:40px;
-}
-.exp .name{
-  font-weight: bold;
-  color: #000066;
-}
-/**End Experiences**/
-
-
-/**Start Projects
-#projects {
-    min-height: 400px;
-    margin-top: 15px;
-}
-#projects .project {
-    text-align: center;
-    margin-top: 0px;
-    width: 325px;
-    height: 325px;
-    position: relative;
-    display: inline-block;
-    -webkit-transition: top 0.2s;
-    transition: top 0.2s;
-}
-@media (min-width:768px){
-  #projects .project{
-    border: 1px solid #edc7b7;
-    margin-bottom: 110px;
-  }
-}
-#projects .description {
-    position: absolute;
-    padding:35px;
-}
-#projects .project-name {
-    font-weight: bold;
-    font-size: 1.4em;
-    line-height: 1.3em;
-    font-family: "Roboto",monospace;
-    text-transform: uppercase;
-}
-#projects .project a {
-  font-family: "Roboto", monospace;
-  font-weight: bold;
-  color: #000066;
-}
-#projects .project a:hover {
-  color: #0000ff;
-}
-#projects .project-summary {
-    height: 155px;
-    font-size: 1.15em;
-    line-height: 1.3em;
-    padding-top: 15px;
-    padding-left: 10px;
-    padding-bottom: 15px;
-    font-family: "Roboto",monospace;
-}
-@media (min-width:961px){
-  #projects .row{
-    margin-left:40px;
-    margin-right:40px;
-  }
-}
-.heart{
-  color: #FF0000;
-}
-.blue{
-  color: #000066;
-  font-weight: bold;
-}
-/**End Projects**/
 .wrapper {
   min-height: 100vh;
   overflow: hidden;
@@ -399,13 +238,15 @@ sub {
   background-color: #fff0f7 !important;
 
 }
+/**End Home**/
 
+
+/**Start Footer**/
 .footer {
   position: absolute;
   bottom: 0;
   width: 80%;
   margin-bottom: 15px;
-  /*font-weight: 100;*/
   font-family: "Roboto",monospace;
   font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
@@ -432,4 +273,4 @@ sub {
     position: relative;
 }
 }
-
+/**End Footer**/

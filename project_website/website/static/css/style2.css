@@ -16,7 +16,6 @@ html, body {
   margin: 0;
   min-height: 100%;
   font-size: 100%;
-  /*font-weight: 400;*/
   line-height: 1.25rem;
   scroll-behavior: smooth;
   overflow-x: hidden !important;  
@@ -26,17 +25,6 @@ html, body {
    margin-left: auto;
    margin-right: auto;
    width: 80%;
-}
-
-.home {
-  background-color: #ffdbd1;
-  color: #000;
-  height: 100%;
-}
-
-.about {
-  background-color: #FFF;
-  color: #000;
 }
 
 a {
@@ -57,9 +45,6 @@ a:hover {
   background-color: #fff0f7;
 }
 
-.mobile {
-  display: none;
-}
 
 /**Start Navbar**/
 .navbar {
@@ -107,8 +92,8 @@ a:hover {
   }
 
 }
-
 /**End Navbar**/
+
 
 /* FOOTER */
 .footer {
@@ -137,84 +122,7 @@ a:hover {
   width: 100%;
   text-align: center;
 }
-
-/******************** HOMEPAGE ********************/
-
-.gif-container {
-  display: block;
-  height: 600px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.gif-box {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 80%;
-}
-
-.gif {
-  padding-top: 10%;
-  float: left;
-  max-width: 100%;
-  vertical-align: middle;
-  display: inline-block;
-}
-
-#next {
-  padding-top: 40px;
-  width: 30px;
-}
-
-
-/******************** ABOUT ********************/
-
-.spacer-100 {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.copy-title {
-  width: 65%;
-  margin-bottom: 60px;
-  padding-right: 0px;
-  padding-top: 90px;
-  font-family: 'Playfair Display', sans-serif;
-  color: #000;
-  font-size: 1.6875rem;
-  line-height: 45px;
-  font-weight: 500;
-  text-align: left;
-}
-
-.copy-body {
-  width: 74%;
-  align-self: flex-start;
-  font-family: 'Roboto', sans-serif;
-  color: #000;
-  line-height: 30px;
-  text-align: left;
-  column-count: 1;
-  font-size: 0.875rem;
-}
-
-.wide-image {
-  max-width: 100%;
-}
-
-.separator {
-  margin: 10px;
-}
-
-.strong {
-  font-weight: bolder;
-}
-
-.resume {
-  width: 100%;
-  height: 100%;
-}
+/**End Footer**/
 
 /******************** PROJECTS ********************/
 
@@ -237,27 +145,40 @@ a:hover {
 
 .flex-title{
   position: absolute;
-  overflow: scroll;
+  overflow: scroll !important;
   white-space: nowrap;
   text-align: center;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  margin-top: 18% !important;
-  margin-bottom: 31% !important;
-  height: 50% !important;
-  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
   line-height: calc(25px + (45 - 25) * ((100vw - 300px) / (1600 - 300)));
   font-family: 'Roboto', monospace;
   opacity: 0;
   color: black;
 }
-
 .project-title{
-  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300))) !important;
+  font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 
 }
+@media only screen and (min-width: 1144px) and (max-width: 1564px) {
+  .flex-title{
+    font-size: 16px;
+  }
+
+}
+@media only screen and (min-width: 890px) and (max-width: 1144px) {
+
+  .project-title{
+    font-size: 24px;
+  }
+  .flex-title{
+    font-size: 22px;
+  }
+
+}
+
 .project-meta{
   color: #515151;
 }
@@ -288,112 +209,6 @@ a:hover {
 }
 
 
-/****************** PROJECT DETAIL ******************/
-.project {
-  height: 100%;
-  width: 100%;
-}
-
-.soon {
-  height: 470px;
-}
-
-.coming-soon {
-  text-align: center;
-  font-size: 2.1875rem;
-  font-family: 'Roboto', sans-serif;
-  color: #ffdbd1;
-  font-weight: bolder;
-  justify-content: center;
-  position: relative;
-  top: 50%;
-  margin: auto;
-}
-
-.banner {
-  display: block;
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 3%;
-  padding-bottom: 2%;
-}
-
-.grid {
-  display:flex;
-  padding-top: 3%;
-}
-
-.grid-cell-narrow {
-  flex: 2;
-}
-
-.grid-cell-wide {
-  flex: 3;
-  padding: 0 2%;
-}
-
-.grid-title {
-  font-family: 'Playfair Display', sans-serif;
-  font-size: 1.7rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-}
-
-.grid-description {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  font-size: 0.8rem;
-  color: #4c4c4c;
-}
-
-.project-details-bold {
-  font-family: 'Yantramanav', sans-serif;
-  font-size: 0.8rem;
-  color: black;
-  font-weight: bolder;
-  letter-spacing: 1px;
-
-}
-
-.project-details-light {
-  font-family: 'Yantramanav', sans-serif;
-  font-size: 0.8rem;
-  color: #4c4c4c;
-  letter-spacing: 1px;
-}
-
-.grid-details {
-  flex: 1;
-  padding-bottom: 3%;
-}
-
-.grid-link:hover {
-  text-decoration: underline;
-}
-
-.grid-images {
-  display: flex;
-  align-items: center;
-  padding-top: 0.5%;
-}
-
-.grid-img-small {
-  flex: 2;
-}
-
-.dt img {
-  padding-left: 3%;
-}
-
-.grid-img-big {
-  flex: 3;
-}
-
-.grid-images img {
-  width: 100%;
-}
-
-
 /****************** MEDIA QUERIES ******************/
 
 @media only screen and (max-width: 1143px) {
@@ -401,11 +216,6 @@ a:hover {
   .flex-item {
     width: 90%;
   }
-  /*
-  .footer {
-    position: relative;
-}
-*/
 }
 
 @media only screen and (min-width: 640px) and (max-width: 940px) {
@@ -419,67 +229,16 @@ a:hover {
      margin-right: auto;
      width: 85%;
    }
-/*
-  .footer {
-    width: 85%;
-  }
-  */
 
   .flex-item {
     width: 100%;
   }
-
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
-
-  .banner {
-    width: 95%;
-  }
-
-  .grid, .grid-images {
-    flex-direction: column;
-  }
-
-  .grid-cell-narrow {
-    padding: 3% 0;
-  }
-
-  .grid-cell-wide {
-    padding: 3% 0;
-  }
-
-  .grid-img-small {
-    padding: 3% 0;
-  }
-
-  .grid-img-big {
-    padding: 3% 0;
-  }
-
-  .dt img {
-    padding: 0;
-  }
-
 }
 
 @media only screen and (max-width: 640px) {
 
   .body {
     font-size: 300%;
-  }
-
-  .copy-body {
-    width: 95%;
-  }
-
-  .spacer-100 {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 
   .container {
@@ -491,56 +250,7 @@ a:hover {
     position: absolute;
 }
 
-/*
-  .footer {
-    width: 90%;
-  }
-*/
   .flex-item {
     width: 100%;
-  }
-
-  .desktop {
-    display: none;
-  }
-
-  .mobile {
-    display: block;
-  }
-
-  .banner {
-    width: 95%;
-  }
-
-  .grid, .grid-images {
-    flex-direction: column;
-  }
-
-  .grid-cell-narrow {
-    padding: 3% 0;
-  }
-
-  .grid-cell-wide {
-    padding: 3% 0;
-  }
-
-  .grid-img-small {
-    padding: 3% 0;
-  }
-
-  .grid-img-big {
-    padding: 3% 0;
-  }
-
-  .grid-title {
-    padding: 4% 0;
-  }
-
-  .grid-details {
-    padding-bottom: 6%;
-  }
-
-  .dt img {
-    padding: 0;
   }
 }
