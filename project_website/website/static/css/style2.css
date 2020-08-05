@@ -141,6 +141,7 @@ a:hover {
   background-color: #bddcff;
   position: relative;
   width: 45%;
+  overflow: scroll !important;
 }
 
 .flex-title{
