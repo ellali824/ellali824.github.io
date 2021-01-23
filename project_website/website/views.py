@@ -27,3 +27,6 @@ def work(request):
 
 def resume(request):
     return render(request, 'resume.html',{})
+
+def coffee(request):
+    return render(coffee, 'coffee.html',{})
